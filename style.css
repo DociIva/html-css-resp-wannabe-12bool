@@ -50,7 +50,7 @@
 #why .row img {
   background-color: #428bca;
   border-radius: 50%;
-  padding: 30px
+  padding: 30px;
 }
 
 /* COMMON */
@@ -71,48 +71,24 @@ img {
 .clear {
   clear: both;
 }
+/*messe da me in più*/
 
-/*MEDIA QUERIES*/
-@media screen and (max-width: 419px) {
-    /*GENERAL*/
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      margin: 0;
-    }
-    img {
-      height: 140px;
-      margin-top: 25px;
-    }
-    /*LAYOUT*/
-    .row {
-      width: 100%;
-      margin-top: 0;
-      padding: 15px 15px 25px;
-    }
-    /*LEZIONI E STEPS*/
-    #lezioni .row>.left,
-    #lezioni .row>.right,
-    #steps .row>.left,
-    #steps .row>.central,
-    #steps .row>.right { 
-      width: 100%;
-    }
-    /*WHY*/
-    #why {
-      background: lightcoral;
-    }
-    #why .row>.first,
-    #why .row>.second,
-    #why .row>.third {
-      
-      margin-top: 20px;
-    }
-    #why hr {
-      margin-top: 25px;
-    }
-
-
+/*spazio tra le colonne*/
+.col-xs-12 {
+  margin-top: 20px;
 }
 
+/*colore delle 3 immagini infondo*/
+#why .col-xs-12 img {
+  background-color: #428bca;
+  border-radius: 50%;
+  padding: 30px;
+}
+
+/*media per le dimensioni delle img quando sono per tel*/
+@media screen and (min-width:767px) {
+   img {
+    height: 140px;
+    margin-top: 25px;
+   }
+}
